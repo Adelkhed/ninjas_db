@@ -1,0 +1,25 @@
+-- INSERT INTO dojos(name) VALUES ("Foued"),("Imen"),("Afef");
+--  DELETE FROM dojos  ;
+ -- INSERT INTO dojos(name) VALUES ("Adel"),("Ahmed"),("Alaa");
+ 
+ -- INSERT INTO ninjas (first_name,last_name,age,dojo_id) VALUES 
+  -- ("foued", "khedhiri", 43 , 4),
+  -- ("afef", "khedhiri", 48 , 4),
+ --  ("imen", "khedhiri", 40 , 4);
+-- INSERT INTO ninjas (first_name,last_name,age,dojo_id) VALUES 
+--   ("wael", "ben", 43 , 5),
+ --  ("firas", "ben", 48 , 5),
+--   ("moemen", "ben", 40 , 5);
+   
+-- INSERT INTO ninjas (first_name,last_name,age,dojo_id) VALUES 
+ --  ("faouzi", "bsa", 25 , 6),
+ --  ("samir", "bsa", 20 , 6),
+ --  ("djo", "bsa", 27 , 6);
+
+-- SELECT * FROM ninjas WHERE dojo_id=4;
+-- SELECT * FROM ninjas WHERE dojo_id=6;
+
+SELECT * FROM dojos
+JOIN ninjas ON dojos.id = ninjas.dojo_id
+WHERE ninjas.id = 6;
+ select * from dojos;
